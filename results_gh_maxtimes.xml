@@ -1,0 +1,2213 @@
+<result>
+	<machine name="cobra" cpu="8xE5520@2.27GHz" memory="8GB"/>
+	<config name="condor-generic" template="templates/condor/runsolver_template_problog.py"/>
+	<system name="problog" version="2.1" measures="problog" config="condor-generic">
+		<setting name="problog" cmdline="-m problog -s maxtimes -dt 1 -c" tag=""/>
+		<setting name="problog_preprocessing" cmdline="-m problog -s maxtimes -dt 1 -c -p" tag=""/>
+	</system>
+	<pbsjob name="condor-generic" timeout="1800" runs="3" script_mode="timeout" walltime="86399" basedir="/mnt/vg01/lv01/home/ritter/benchmark-tool/" condortemplate="templates/condor/condor.submit"/>
+	<benchmark name="all_Count_aspmc_gh_maxtimes">
+		<class name="." id="0">
+			<instance name="gh_10_0.pl" id="0"/>
+			<instance name="gh_11_0.pl" id="1"/>
+			<instance name="gh_12_0.pl" id="2"/>
+			<instance name="gh_13_0.pl" id="3"/>
+			<instance name="gh_14_0.pl" id="4"/>
+			<instance name="gh_15_0.pl" id="5"/>
+			<instance name="gh_1_0.pl" id="6"/>
+			<instance name="gh_2_0.pl" id="7"/>
+			<instance name="gh_3_0.pl" id="8"/>
+			<instance name="gh_4_0.pl" id="9"/>
+			<instance name="gh_5_0.pl" id="10"/>
+			<instance name="gh_6_0.pl" id="11"/>
+			<instance name="gh_7_0.pl" id="12"/>
+			<instance name="gh_8_0.pl" id="13"/>
+			<instance name="gh_9_0.pl" id="14"/>
+		</class>
+	</benchmark>
+	<project name="problog_problog" job="condor-generic">
+		<runspec machine="cobra" system="problog" version="2.1" benchmark="all_Count_aspmc_gh_maxtimes" setting="problog">
+			<class id="0">
+				<instance id="9">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_4_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_4_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.64"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.73382"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.73382"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_4_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_4_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.53"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.63914"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.63914"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_4_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_4_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.61"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.64056"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.64056"/>
+					</run>
+				</instance>
+				<instance id="10">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_5_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_5_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.91"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.68404"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.68404"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_5_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_5_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.52"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.69924"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.69924"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_5_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_5_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.93"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.6686"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.6686"/>
+					</run>
+				</instance>
+				<instance id="13">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_8_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_8_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.38"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.75643"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.75643"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_8_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_8_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.25"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.36538"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.36538"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_8_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_8_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.63"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.73486"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.73486"/>
+					</run>
+				</instance>
+				<instance id="8">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_3_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_3_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.64"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.76825"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.76825"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_3_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_3_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.96"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.71001"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.71001"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_3_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_3_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.83"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.61084"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.61084"/>
+					</run>
+				</instance>
+				<instance id="0">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_10_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_10_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.14"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.61275"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.61275"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_10_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_10_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.94"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.4925"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.4925"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_10_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_10_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.88"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.50882"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.50882"/>
+					</run>
+				</instance>
+				<instance id="14">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_9_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_9_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.91"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.52992"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.52992"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_9_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_9_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.75"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.54832"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.54832"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_9_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_9_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.48"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.62911"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.62911"/>
+					</run>
+				</instance>
+				<instance id="12">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_7_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_7_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.71"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.57202"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.57202"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_7_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_7_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.74"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.56126"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.56126"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_7_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_7_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.04"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.54477"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.54477"/>
+					</run>
+				</instance>
+				<instance id="4">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_14_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_14_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.94"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.53337"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.53337"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_14_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_14_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.96"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.49527"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.49527"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_14_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_14_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.03"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.53277"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.53277"/>
+					</run>
+				</instance>
+				<instance id="5">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_15_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_15_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.48"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.36595"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.36595"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_15_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_15_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.01"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.48182"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.48182"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_15_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_15_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.89"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.46189"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.46189"/>
+					</run>
+				</instance>
+				<instance id="11">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_6_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_6_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.9"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.47713"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.47713"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_6_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_6_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.93"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.51724"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.51724"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_6_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_6_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.48"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.50307"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.50307"/>
+					</run>
+				</instance>
+				<instance id="1">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_11_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_11_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.87"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.48703"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.48703"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_11_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_11_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.95"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.49797"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.49797"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_11_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_11_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.73"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.46013"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.46013"/>
+					</run>
+				</instance>
+				<instance id="7">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_2_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_2_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.73"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.47056"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.47056"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_2_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_2_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="46.81"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.35044"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.35044"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_2_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_2_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.67"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.526"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.526"/>
+					</run>
+				</instance>
+				<instance id="3">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_13_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_13_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.72"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.47359"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.47359"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_13_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_13_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.91"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.4504"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.4504"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_13_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_13_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.02"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.56274"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.56274"/>
+					</run>
+				</instance>
+				<instance id="2">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_12_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_12_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.93"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.45459"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.45459"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_12_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_12_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.75"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.44958"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.44958"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_12_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_12_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.82"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.46418"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.46418"/>
+					</run>
+				</instance>
+				<instance id="6">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_1_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_1_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.77"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.47024"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.47024"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_1_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_1_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.76"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.44689"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.44689"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog/./gh_1_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_1_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.41"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.47668"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.47668"/>
+					</run>
+				</instance>
+			</class>
+		</runspec>
+		<runspec machine="cobra" system="problog" version="2.1" benchmark="all_Count_aspmc_gh_maxtimes" setting="problog_preprocessing">
+			<class id="0">
+				<instance id="9">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_4_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_4_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.98"/>
+						<measure name="preprocessing_time" type="float" val="0.00527501106262"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.45234"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.45234"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_4_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_4_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.55"/>
+						<measure name="preprocessing_time" type="float" val="0.00476789474487"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.48666"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.48666"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_4_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_4_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.23"/>
+						<measure name="preprocessing_time" type="float" val="0.00493264198303"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.35008"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.35008"/>
+					</run>
+				</instance>
+				<instance id="10">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_5_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_5_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.0"/>
+						<measure name="preprocessing_time" type="float" val="0.00594401359558"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.5066"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.5066"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_5_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_5_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.67"/>
+						<measure name="preprocessing_time" type="float" val="0.00415015220642"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.45093"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.45093"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_5_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_5_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.82"/>
+						<measure name="preprocessing_time" type="float" val="0.0042839050293"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.44367"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.44367"/>
+					</run>
+				</instance>
+				<instance id="13">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_8_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_8_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.83"/>
+						<measure name="preprocessing_time" type="float" val="0.00553560256958"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.46534"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.46534"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_8_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_8_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.86"/>
+						<measure name="preprocessing_time" type="float" val="0.00381278991699"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.43449"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.43449"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_8_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_8_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.99"/>
+						<measure name="preprocessing_time" type="float" val="0.00500082969666"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.45365"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.45365"/>
+					</run>
+				</instance>
+				<instance id="8">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_3_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_3_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.82"/>
+						<measure name="preprocessing_time" type="float" val="0.00548529624939"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.44127"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.44127"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_3_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_3_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.71"/>
+						<measure name="preprocessing_time" type="float" val="0.00623250007629"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.40434"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.40434"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_3_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_3_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.83"/>
+						<measure name="preprocessing_time" type="float" val="0.00623106956482"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.51111"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.51111"/>
+					</run>
+				</instance>
+				<instance id="0">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_10_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_10_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.96"/>
+						<measure name="preprocessing_time" type="float" val="0.00603008270264"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.45508"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.45508"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_10_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_10_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.89"/>
+						<measure name="preprocessing_time" type="float" val="0.00475645065308"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.43672"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.43672"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_10_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_10_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.66"/>
+						<measure name="preprocessing_time" type="float" val="0.00539112091064"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.45859"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.45859"/>
+					</run>
+				</instance>
+				<instance id="14">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_9_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_9_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.1"/>
+						<measure name="preprocessing_time" type="float" val="0.00548052787781"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.51416"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.51416"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_9_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_9_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.75"/>
+						<measure name="preprocessing_time" type="float" val="0.00420308113098"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.4618"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.4618"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_9_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_9_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.94"/>
+						<measure name="preprocessing_time" type="float" val="0.00413632392883"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.43514"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.43514"/>
+					</run>
+				</instance>
+				<instance id="12">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_7_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_7_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.71"/>
+						<measure name="preprocessing_time" type="float" val="0.00472140312195"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.44057"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.44057"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_7_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_7_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.14"/>
+						<measure name="preprocessing_time" type="float" val="0.00388741493225"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.35013"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.35013"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_7_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_7_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.03"/>
+						<measure name="preprocessing_time" type="float" val="0.00591707229614"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.40395"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.40395"/>
+					</run>
+				</instance>
+				<instance id="4">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_14_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_14_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.07"/>
+						<measure name="preprocessing_time" type="float" val="0.00476455688477"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.40935"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.40935"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_14_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_14_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.11"/>
+						<measure name="preprocessing_time" type="float" val="0.00444769859314"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.42458"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.42458"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_14_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_14_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.93"/>
+						<measure name="preprocessing_time" type="float" val="0.00527095794678"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.44786"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.44786"/>
+					</run>
+				</instance>
+				<instance id="5">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_15_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_15_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.31"/>
+						<measure name="preprocessing_time" type="float" val="0.00523352622986"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.44593"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.44593"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_15_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_15_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.18"/>
+						<measure name="preprocessing_time" type="float" val="0.00370168685913"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.45432"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.45432"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_15_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_15_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.04"/>
+						<measure name="preprocessing_time" type="float" val="0.00545048713684"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.46844"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.46844"/>
+					</run>
+				</instance>
+				<instance id="11">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_6_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_6_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.11"/>
+						<measure name="preprocessing_time" type="float" val="0.00426530838013"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.36871"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.36871"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_6_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_6_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.75"/>
+						<measure name="preprocessing_time" type="float" val="0.0047013759613"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.50325"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.50325"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_6_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_6_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.23"/>
+						<measure name="preprocessing_time" type="float" val="0.00455451011658"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.28436"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.28436"/>
+					</run>
+				</instance>
+				<instance id="1">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_11_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_11_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.94"/>
+						<measure name="preprocessing_time" type="float" val="0.00385999679565"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.45634"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.45634"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_11_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_11_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.68"/>
+						<measure name="preprocessing_time" type="float" val="0.00515699386597"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.52768"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.52768"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_11_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_11_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.89"/>
+						<measure name="preprocessing_time" type="float" val="0.00527477264404"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.45595"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.45595"/>
+					</run>
+				</instance>
+				<instance id="7">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_2_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_2_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.84"/>
+						<measure name="preprocessing_time" type="float" val="0.00481295585632"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.40448"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.40448"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_2_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_2_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.68"/>
+						<measure name="preprocessing_time" type="float" val="0.00548315048218"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.4369"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.4369"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_2_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_2_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.75"/>
+						<measure name="preprocessing_time" type="float" val="0.00494933128357"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.43059"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.43059"/>
+					</run>
+				</instance>
+				<instance id="3">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_13_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_13_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.0"/>
+						<measure name="preprocessing_time" type="float" val="0.00471663475037"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.46412"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.46412"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_13_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_13_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.92"/>
+						<measure name="preprocessing_time" type="float" val="0.0049524307251"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.43525"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.43525"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_13_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_13_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.02"/>
+						<measure name="preprocessing_time" type="float" val="0.00354647636414"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.44833"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.44833"/>
+					</run>
+				</instance>
+				<instance id="2">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_12_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_12_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.45"/>
+						<measure name="preprocessing_time" type="float" val="0.00389122962952"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.33943"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.33943"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_12_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_12_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.9"/>
+						<measure name="preprocessing_time" type="float" val="0.00473523139954"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.40942"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.40942"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_12_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_12_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="48.03"/>
+						<measure name="preprocessing_time" type="float" val="0.00509333610535"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.51051"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.51051"/>
+					</run>
+				</instance>
+				<instance id="6">
+					<run number="1">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_1_0.pl/run1"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_1_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.75"/>
+						<measure name="preprocessing_time" type="float" val="0.00453543663025"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.4652"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.4652"/>
+					</run>
+					<run number="2">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_1_0.pl/run2"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_1_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.79"/>
+						<measure name="preprocessing_time" type="float" val="0.00467562675476"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.52041"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.52041"/>
+					</run>
+					<run number="3">
+						<measure name="error" type="int" val="0"/>
+						<measure name="error_str" type="string" val=""/>
+						<measure name="full_call" type="string" val="None"/>
+						<measure name="full_path" type="string" val="output/problog_problog/cobra/results/all_Count_aspmc_gh_maxtimes/problog-2.1-problog_preprocessing/./gh_1_0.pl/run3"/>
+						<measure name="hash" type="string" val="None"/>
+						<measure name="instance" type="string" val="gh_1_0.pl"/>
+						<measure name="memerror" type="string" val="NA"/>
+						<measure name="memlimit" type="int" val="8336"/>
+						<measure name="memusage" type="float" val="47.82"/>
+						<measure name="preprocessing_time" type="float" val="0.003746509552"/>
+						<measure name="result" type="long" val="0"/>
+						<measure name="run" type="int" val="0"/>
+						<measure name="setting" type="string" val="problog_preprocessing"/>
+						<measure name="solved" type="int" val="-1"/>
+						<measure name="solver" type="string" val="problog"/>
+						<measure name="solver_args" type="string" val="-m problog -s maxtimes -dt 1 -c -p"/>
+						<measure name="solver_version" type="string" val="2.1"/>
+						<measure name="status" type="string" val="NA"/>
+						<measure name="time" type="float" val="1.53529"/>
+						<measure name="timelimit" type="int" val="1800"/>
+						<measure name="timeout" type="float" val="0"/>
+						<measure name="wall" type="float" val="1.53529"/>
+					</run>
+				</instance>
+			</class>
+		</runspec>
+	</project>
+</result>
